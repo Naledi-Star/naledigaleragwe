@@ -3,398 +3,352 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Naledi Galeragwe - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <title>Naledi's Page</title>
   </head>
-
   <body>
-    <div class="nav-container">
-      <nav>
-        <img src="img/img2.png" alt="logo" srcset="" />
-        <button class="hamburger" id="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </button>
-        <ul id="home-ul">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div id="home">
-      <div id="home-content">
-        <div class="text">
-          <p>NALEDI GALERAGWE</p>
-        </div>
+    <!-- Grid texture overlay -->
+    <div class="grid-overlay"></div>
 
-        <p class="big-home-text">Building Software is my passion</p>
-        <p class="small-home-text">
-          I am a <span id="softw-dev">Software Developer</span> specializing in
-          building user-friendly, secure, and easy-to-use websites and
-          applications.
-        </p>
-
-        <button><a href="#about">About Me</a></button>
-      </div>
+    <!-- Social icons - right edge -->
+    <div class="social-bar">
+      <div class="social-line"></div>
+      <a href="mailto:stargaleragwe@gmail.com" aria-label="Email" class="social-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+      <a href="tel:+26771452414" aria-label="Phone" class="social-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <div class="social-line"></div>
     </div>
 
-    <div id="about" class="navitem">
-      <h2>About me</h2>
+    <!-- ─── NAV ──────────────────────────────────────────── -->
+    <nav class="site-nav">
+      <a href="#home" class="nav-logo">NG_</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="#home" class="nav-active">
+            <span class="nav-prompt">&gt;_</span> Home
+          </a>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-      <div id="about-parent">
-        <div id="about-content">
-          <div id="intro" class="about-items">
-            <p>Introduction</p>
-            <p>
-              I am a Software Developer specializing in building dynamic
-              websites, with a strong focus on creating engaging user
-              interfaces. I am proficient in JavaScript—the core language behind
-              modern web development—and have hands-on experience with popular
-              frameworks and libraries such as jQuery, Angular, and React.
-              Recently gained experience in SQL and supabase.
-            </p>
-          </div>
-          <div class="line"></div>
-          <div id="school" class="about-items">
-            <p>Qualification</p>
-            <p>Course: Computer Science and Software Engineering</p>
-            <p>
-              School: Botswana International University of Science and
-              Technology
-            </p>
-            <p>Date: Nov 2017 - Sept 2021</p>
-            <p>
-              Modules: Discreet Mathematics, Analysis of algorithms, Computer
-              Forensics, Programming in Java, Object Oriented Programming with
-              C++ e.t.c
-            </p>
-          </div>
-          <div class="line"></div>
+    <!-- ─── HERO ─────────────────────────────────────────── -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <!-- Left: intro -->
+        <div class="hero-text">
+          <p class="comment fade-in fade-in-1">// HELLO, I'M</p>
+          <h1 class="hero-name fade-in fade-in-2">
+            Naledi<br />Galeragwe
+          </h1>
+          <p class="hero-role fade-in fade-in-2">
+            <span class="green">&gt;</span>
+            <span> Software Developer</span>
+            <span class="cursor"></span>
+          </p>
+          <div class="green-line fade-in fade-in-3"></div>
+          <p class="hero-desc fade-in fade-in-3">
+            Building user-friendly, secure, and easy-to-use websites and 
+            applications with a focus on clean interfaces and reliable functionality.
 
-          <div id="experience" class="about-items">
-            <p>Experience</p>
-            <p>
-              As a Software developer, I worked across diverse code bases and
-              gained hands-on experience with systems such as One Gov, BNSC, and
-              MYSC (Ministry of Youth & Ministry of Sports). I also worked in
-              Quality Assurance ensuring that the best standards on a Software
-              are met. In addition to my professional work, I have pursued
-              self-driven learning in web design, mastering concepts like color
-              theory, typography, and responsive design, alongside advanced web
-              development practices.
-            </p>
+          </p>
+          <div class="hero-btns fade-in fade-in-4">
+            <a href="#projects" class="btn-terminal">
+              <span>&gt;</span> View My Work
+            </a>
+            <a href="#about" class="btn-text">About Me</a>
+          </div>
+        </div>
+
+        <!-- Right: code block + photo -->
+        <div class="hero-right fade-in fade-in-5">
+          <div class="code-block">
+            <div class="code-line"><span class="ln">01</span><span><span class="ck">const </span><span class="cv">naledi</span><span class="cs"> = {</span></span></div>
+            <div class="code-line"><span class="ln">02</span><span><span class="ck">  role</span><span class="cs">: </span><span class="cstr">"Software Developer"</span><span class="cs">,</span></span></div>
+            <div class="code-line"><span class="ln">03</span><span><span class="ck">  skills</span><span class="cs">: [</span></span></div>
+            <div class="code-line"><span class="ln">04</span><span><span class="cstr">    "JavaScript"</span><span class="cs">,</span></span></div>
+            <div class="code-line"><span class="ln">05</span><span><span class="cstr">    "React"</span><span class="cs">,</span></span></div>
+            <div class="code-line"><span class="ln">06</span><span><span class="cstr">    "Angular"</span><span class="cs">,</span></span></div>
+            <div class="code-line"><span class="ln">07</span><span><span class="cstr">    "SQL"</span><span class="cs">,</span></span></div>
+            <div class="code-line"><span class="ln">08</span><span><span class="cstr">    "Supabase"</span></span></div>
+            <div class="code-line"><span class="ln">09</span><span><span class="cs">  ],</span></span></div>
+            <div class="code-line"><span class="ln">10</span><span><span class="ck">  passion</span><span class="cs">: </span><span class="cstr">"Building impactful</span></span></div>
+            <div class="code-line"><span class="ln">11</span><span><span class="cstr">           digital experiences"</span></span></div>
+            <div class="code-line"><span class="ln">12</span><span><span class="cs">};</span></span></div>
+          </div>
+
+          <!-- Photo with corner brackets -->
+          <div class="hero-photo-frame">
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+            <img src="img/me/curls.png" alt="Naledi Galeragwe" class="hero-photo" />
+            <div class="photo-tint"></div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="navitem">
-        <div id="work">
-          <h2>Work Experience</h2>
+    <!-- ─── ABOUT ────────────────────────────────────────── -->
+    <section id="about" class="section about">
+      <div class="container">
+        <p class="comment">// ABOUT</p>
+        <h2 class="section-title">Who I am beyond the code</h2>
 
-          <div id="work-content">
-            <div id="work-box1">
-              <div class="work-text">
-                <h3>Associate Developer</h3>
-              </div>
-              <p style="padding-top: 20px">Smartpay Systems</p>
-              <p class="duration">From Oct 2023 - June 2025</p>
-              <p class="big-text">Tasks</p>
-              <p>Quality Assurance</p>
-              <p>Drawing work flows</p>
-              <p>Requirements analysis</p>
-              <p>Debbuging</p>
-            </div>
-
-            <div id="work-box2">
-              <div class="work-text">
-                <h3>Frontend Developer</h3>
-              </div>
-              <p style="padding-top: 20px">BlackOak Consulting</p>
-              <p class="duration">From Jan 2023 - Sept 2023</p>
-              <p class="big-text">Tasks</p>
-              <p>Software development with JavaScript(AngularJS)</p>
-              <p>Debugging</p>
-              <p>System training</p>
-              <p>System testing</p>
-            </div>
-
-            <div id="work-box2">
-              <div class="work-text">
-                <h3>IT Support</h3>
-              </div>
-              <p style="padding-top: 20px">
-                Botswana College of Engineering and Technology
-              </p>
-              <p class="duration">From Mar 2022 - Jan 2023</p>
-              <p class="big-text">Tasks</p>
-              <p>Software installation, maintanence and troubleshooting</p>
-              <p>Hardware maintenance, replacement and troubleshooting</p>
-              <p>End-user support</p>
-              <p class="last-element">Network troubleshooting</p>
+        <div class="about-grid">
+          <div class="about-photos">
+            <div class="photo-frame-sm">
+              <div class="corner tl"></div>
+              <div class="corner tr"></div>
+              <div class="corner bl"></div>
+              <div class="corner br"></div>
+              <img src="img/me/IMG_20250209_112306.jpg" alt="Naledi" />
+              <div class="photo-tint"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="portfolio" class="navitem">
-        <h2>Projects</h2>
-        <div class="portfolio-body">
-          <div id="portfolio-content">
-            <div class="portfolio-items">
-              <img src="img/0001.png" srcset="" />
-              <div class="portfolio-text">
-                <p>
-                  Developed this current personal website by using HTML, CSS and
-                  JavaScript, this website serves as an online portfolo to
-                  showcase my skills, background and past projects
-                </p>
 
-                <!-- <p style="padding-top: 8px">TOOLS: HTML & CSS</p> -->
+          <div class="about-cards">
+            <div class="term-card" data-animate>
+              <div class="term-card-header">
+                <span class="comment">// introduction</span>
               </div>
-            </div>
-            <div class="portfolio-items">
-              <img src="img/trendquest.PNG" srcset="" />
-              <div class="portfolio-text">
-                <p>
-                  Designed and developed a responsive website that enables the
-                  company to showcase and promote their printing services and
-                  custom products online.
-                </p>
-
-                <!-- <p style="padding-top: 8px; margin: 0 20px 0 20px">
-                  TOOLS: ReactJS
-                </p> -->
-                <a
-                  href="https://trendquest.co.bw/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Link to the site</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-items">
-              <img src="img/app.jpg" srcset="" />
-              <div class="portfolio-text">
-                <p>
-                  Designed and developed a mobile application for a herbal
-                  clinic, for them sell them herbal and organic products online
-                </p>
-
-                <!-- <p style="padding-top: 8px; margin: 0 20px 0 20px">
-                  TOOLS: ReactJS
-                </p> -->
-                <a
-                  href="https://drive.google.com/file/d/1rcubl8_sPEeXIBoj0KiEuIhlKCroEK56/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >App overview</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-items">
-              <img src="img/defect.png" srcset="" />
-              <div class="portfolio-text">
-                <p>Developed bug tracking prototype site</p>
-
-                <!-- <p style="padding-top: 8px; margin: 0 20px 0 20px">
-                  TOOLS: ReactJS
-                </p> -->
-                <a
-                  href="https://naledi-star.github.io/bug-tracker/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Link to the site</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-items">
-              <img src="img/0002.png" srcset="" />
-              <div class="portfolio-text">
-                <p>Designed a structure for a defect tracker website.</p>
-                <!-- <p style="padding-top: 8px; margin: 0 20px 0 20px">
-                  TOOLS: Figma
-                </p> -->
-                <a
-                  href="https://www.figma.com/proto/P81DrHMxrIhk22ZucgIFKI/Raise-a-bug--Copy-?node-id=2056-153&t=qHvECElsvCueFw6B-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Link to the dashboard</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-items">
-              <img src="img/003.png" srcset="" />
-              <div class="portfolio-text">
-                <p>Designed an e-commerce application.</p>
-                <!-- <p style="padding-top: 8px">TOOLS: Figma</p> -->
-                <a
-                  href="https://www.figma.com/proto/V6ZpQlNkSoVrudNUHC9dGG/mobile?node-id=2-7&p=f&t=scJDJlQ7OEbsVvJ9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Link to the page</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="skills" class="navitem">
-      <h2>Skills</h2>
-      <div id="skills-content">
-        <div id="skills-style">
-          <div class="skills-box">
-            <div class="skills-item">
-              <p class="skill-title">PORTFOLIO WEBSITE</p>
-              <p><span>Tech Stack:</span> HTML, CSS, JavaScript</p>
-              <p><span>Hosting:</span> GitHub Pages</p>
-              <p class="desc">Description:</p>
               <p>
-                Developed a responsive personal website to showcase my
-                background, skills, and portfolio.
+                I am a Software Developer specializing in building dynamic
+                websites, with a strong focus on creating engaging user
+                interfaces. I am proficient in JavaScript - the core language
+                behind modern web development - and have hands-on experience
+                with popular frameworks and libraries such as jQuery, Angular,
+                and React. Recently gained experience in SQL and Supabase.
               </p>
-              <p class="highl">Highlights:</p>
-              <ul>
+            </div>
+            <div class="term-card" data-animate>
+              <div class="term-card-header">
+                <span class="comment">// qualification</span>
+              </div>
+              <p><span class="green">Course:</span> Computer Science and Software Engineering</p>
+              <p><span class="green">School:</span> Botswana International University of Science and Technology</p>
+              <p><span class="green">Date:</span> Nov 2017 – Sept 2021</p>
+            </div>
+            <div class="term-card" data-animate>
+              <div class="term-card-header">
+                <span class="comment">// experience</span>
+              </div>
+              <p>
+                As a Software developer, I worked across diverse code bases and
+                gained hands-on experience with systems such as One Gov, BNSC,
+                and MYSC (Ministry of Youth &amp; Ministry of Sports). I also
+                worked in Quality Assurance ensuring that the best standards on
+                a Software are met.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ───────────────────────────────────── -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <p class="comment">// EXPERIENCE</p>
+        <h2 class="section-title">Where I have built things that matter</h2>
+
+        <div class="work-grid">
+          <div class="term-card work-card" data-animate>
+            <div class="term-card-header">
+              <span class="comment">// nov 2025 – present</span>
+            </div>
+            <h3>Software Developer</h3>
+            <p class="work-company">IP Space</p>
+            <ul class="task-list task-list-collapsed">
+              <li>Developed a cross-platform mobile application for Android and iOS using React-Native, Expo and TypeScript</li>
+              <li>Configured production builds, app signing, certificates, provisioning, and platform-specific credentials for both platforms</li>
+              <li>Deployed the apps to Google Play and Apple App Store, using App Uploader for the iOS submission</li>
+              <li class="hidden-item">Designed and implemented system architectures and workflows using use case diagrams</li>
+              <li class="hidden-item">Retrieved data from the database by utilising REST APIs through HTTP requests</li>
+              <li class="hidden-item">Solely developed an event management site, with features such as ticket generation, report generation and download, event approval etc.</li>
+              <li class="hidden-item">Created an S3 bucket on AWS and hosted a website</li>
+              <li class="hidden-item">Created an EC2 instance on AWS to host a server</li>
+              <li class="hidden-item">Assisted in creating an Aurora and RDS (relational databases) instance on AWS to store data</li>
+              <li class="hidden-item">Migrated PostgreSQL schema from local to PostgreSQL in EC2 on a Django application</li>
+            </ul>
+            <button class="see-more-btn" onclick="this.previousElementSibling.classList.toggle('task-list-collapsed'); this.textContent = this.textContent === 'see more' ? 'see less' : 'see more'">see more</button>
+          </div>
+          <div class="term-card work-card" data-animate>
+            <div class="term-card-header">
+              <span class="comment">// oct 2023 – jun 2025</span>
+            </div>
+            <h3>Associate Developer</h3>
+            <p class="work-company">Smartpay Systems</p>
+            <ul class="task-list">
+              <li>Quality Assurance</li>
+              <li>Drawing workflows</li>
+              <li>Requirements analysis</li>
+              <li>Debugging</li>
+            </ul>
+          </div>
+          <div class="term-card work-card" data-animate>
+            <div class="term-card-header">
+              <span class="comment">// jan 2023 – sep 2023</span>
+            </div>
+            <h3>Frontend Developer</h3>
+            <p class="work-company">BlackOak Consulting</p>
+            <ul class="task-list">
+              <li>Software development with JavaScript (AngularJS)</li>
+              <li>Debugging</li>
+              <li>System training</li>
+              <li>System testing</li>
+            </ul>
+          </div>
+          <div class="term-card work-card" data-animate>
+            <div class="term-card-header">
+              <span class="comment">// mar 2022 – jan 2023</span>
+            </div>
+            <h3>IT Support</h3>
+            <p class="work-company">Botswana College of Engineering and Technology</p>
+            <ul class="task-list">
+              <li>Software installation, maintenance and troubleshooting</li>
+              <li>Hardware maintenance, replacement and troubleshooting</li>
+              <li>End-user support</li>
+              <li>Network troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS & SKILLS ───────────────────────────── -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <p class="comment">// PROJECTS & SKILLS</p>
+        <h2 class="section-title">Work that ships and breathes</h2>
+
+        <div class="projects-grid">
+          <!-- Portfolio Website (this site) -->
+          <div class="term-card project-card" data-animate>
+            <div class="project-img-wrap">
+              <img src="img/porfolio.png" alt="Portfolio Website" />
+              <div class="photo-tint"></div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <span class="green" style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;">// yes, this one</span>
+              <p class="skill-stack">HTML, CSS, JavaScript</p>
+              <ul class="task-list">
                 <li>Built with clean, semantic HTML and modular CSS</li>
                 <li>Fully responsive across devices</li>
-                <li>Deployed and maintained on GitHub Pages</li>
-              </ul>
-            </div>
-            <div class="skills-item">
-              <p class="skill-title">TRENDQUEST WEBSITE</p>
-              <p><span>Tech Stack:</span> ReactJS</p>
-              <p><span>Hosting:</span> Hostinger (with custom domain)</p>
-              <p class="desc">Description:</p>
-              <p>
-                Developed and deployed a business website to promote services
-                and engage users online.
-              </p>
-              <p class="highl">Highlights:</p>
-              <ul>
-                <li>Implemented responsive UI using React components</li>
-                <li>Managed hosting, A-records, and domain setup</li>
-                <li>Optimized for fast performance and accessibility</li>
-              </ul>
-       
-            </div>
-            <div class="skills-item">
-              <p class="skill-title">TAKUWA E-COMMERCE APP</p>
-              <p><span>Tech Stack:</span> React Native, REST API, Supabase</p>
-              <p><span>Integrations:</span> Google Maps, Payment Gateway</p>
-              <p class="desc">Description:</p>
-              <p>
-                Built a mobile e-commerce app enabling customers to browse and
-                purchase natural products.
-              </p>
-              <p class="highl">Highlights:</p>
-              <ul>
-                <li>
-                  Integrated secure payment processing and order management
-                </li>
-                <li>
-                  Used Google Maps for delivery coordination and order tracking
-                </li>
-                <li>
-                  Designed and connected a Supabase backend with real-time data
-                </li>
-                <li>Role based access</li>
+                <li>Deployed on GitHub Pages</li>
               </ul>
             </div>
           </div>
-          <div class="skills-box">
-            <div class="skills-item">
-              <p class="skill-title">BUG TRACKER PROTOTYPE</p>
-              <p><span>Tech Stack:</span> TypeScript</p>
-              <p class="desc">Description:</p>
-              <p>Developed a prototype for a defect-tracking system that allows teams to log, assign, and manage issues efficiently.</p>
-              <p class="highl">Highlights:</p>
-              <ul>
-                <li>Implemented core logic using TypeScript for type safety and scalability</li>
-                <li>Designed a modular system structure for future feature expansion</li>
-              </ul>
-            </div>
-            <div class="skills-item">
-              <p class="skill-title">
-                BUG-TRACKER DESIGN
-              </p>
-              <p><span>Tools:</span> Figma</p>
-              <p class="desc">Description:</p>
-              <p>Created a web design prototype for a defect-tracking platform.</p>
-              <p class="highl">Highlights:</p>
-              <ul>
-                  <li>Designed UI components for the dashboard, issue logs, and reports
-                  </li>
-                  <li>Focused on user-friendly layouts and clear navigation
-                  </li>
-              </ul>
-            </div>
-            <div class="skills-item">
-              <p class="skill-title">MOBILE APP DESIGN</p>
-              <p>              <span>Tools:</span> Figma
-</p>
-<p class="desc">Description:
-</p>
-<p>Designed an intuitive mobile app interface for a modern user experience.
-</p>
-<p class="highl">Highlights:
-</p>
-<ul>
-  <li>Focused on usability and consistency across screens
-</li>
-  <li>Created interactive prototypes to visualize user flow
-</li>
-</ul>
 
-
+          <!-- Takuwa Intro Page -->
+          <a href="https://www.takuwaonline.com/" target="_blank" rel="noopener noreferrer" class="term-card project-card" data-animate>
+            <div class="project-img-wrap">
+              <img src="img/takuwapage.png" alt="Takuwa Intro Page" />
+              <div class="photo-tint"></div>
             </div>
+            <div class="project-info">
+              <h3>Takuwa Intro Page</h3>
+              <p class="skill-stack">HTML, CSS, JavaScript, SEO</p>
+              <ul class="task-list">
+                <li>Landing page for Takuwa herbal clinic</li>
+                <li>SEO optimised for search visibility</li>
+                <li>Responsive design across devices</li>
+              </ul>
+              <span class="green project-link">&gt; visit site</span>
+            </div>
+          </a>
+
+          <!-- Takuwa E-Commerce App -->
+          <a href="https://drive.google.com/file/d/1rcubl8_sPEeXIBoj0KiEuIhlKCroEK56/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="term-card project-card" data-animate>
+            <div class="project-img-wrap">
+              <img src="img/app.jpg" alt="Takuwa App" />
+              <div class="photo-tint"></div>
+            </div>
+            <div class="project-info">
+              <h3>Takuwa E-Commerce App</h3>
+              <p class="skill-stack">React Native, REST API, Supabase, CI/CD, Sentry, Resend, Deployment</p>
+              <p>Mobile app for a herbal clinic to sell products online.</p>
+              <ul class="task-list">
+                <li>Integrated secure payment processing</li>
+                <li>Google Maps for delivery coordination</li>
+                <li>Supabase backend with real-time data</li>
+                <li>Role-based access control</li>
+              </ul>
+              <span class="green project-link">&gt; app overview</span>
+            </div>
+          </a>
+
+          <!-- Bug Tracker -->
+          <a href="https://broad-pond-4184.stargaleragwe.workers.dev/" target="_blank" rel="noopener noreferrer" class="term-card project-card" data-animate>
+            <div class="project-img-wrap">
+              <img src="img/bugtracker.png" alt="Bug Tracker" />
+              <div class="photo-tint"></div>
+            </div>
+            <div class="project-info">
+              <h3>Bug Tracker</h3>
+              <p class="skill-stack">TypeScript, Supabase, REST API, Auth</p>
+              <p>Defect-tracking prototype site.</p>
+              <ul class="task-list">
+                <li>Type-safe core logic for scalability</li>
+                <li>Modular system structure</li>
+              </ul>
+              <span class="green project-link">&gt; visit site</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ──────────────────────────────────────── -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="comment">// CONTACT</p>
+        <h2 class="section-title">Start a conversation</h2>
+
+        <div class="contact-grid">
+          <div class="term-card contact-card" data-animate>
+            <div class="term-card-header"><span class="comment">// email</span></div>
+            <a href="mailto:stargaleragwe@gmail.com" class="contact-link">
+              <span class="green">&gt;</span> stargaleragwe@gmail.com
+            </a>
           </div>
-         
+          <div class="term-card contact-card" data-animate>
+            <div class="term-card-header"><span class="comment">// phone</span></div>
+            <a href="tel:+26771452414" class="contact-link">
+              <span class="green">&gt;</span> +267 71 452 414
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer>
-      <div class="footer-container">
-        <!-- Contact Information -->
-        <div class="footer-section">
-          <p>Contact</p>
-          <p>
-            Email:
-            <a href="mailto:stargaleragwe@gmail.com">stargaleragwe@gmail.com</a>
-          </p>
-          <p>Phone: <a href="tel:+2671452414">+267 71 452 414</a></p>
+    <!-- ─── FOOTER ───────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="nav-logo" style="font-size:14px;">NG_</span>
+        <p class="comment">&copy; 2026 Naledi Galeragwe</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="footer-section">
-          <p>Portfolio</p>
-          <p>Detailed personal information</p>
-          <p>dashboard to bug tracker website</p>
-          <p>Web and mobile application</p>
-        </div>
-
-        <div class="footer-section">
-          <ul id="footer-ul">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Copyright Notice -->
-      <div id="copyright-parent">
-        <p class="copyright">
-          &copy; 2025 Naledi Galeragwe. All rights reserved.
-        </p>
       </div>
     </footer>
 
