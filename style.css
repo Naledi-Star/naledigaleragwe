@@ -371,6 +371,20 @@ ul {
   align-items: center;
 }
 
+.hero-code-float {
+  position: absolute;
+  top: 100px;
+  right: 48px;
+  z-index: 2;
+  transform: scale(0.75);
+  transform-origin: top right;
+  opacity: 0.6;
+}
+
+.hero-code-float .code-block {
+  padding: 14px 16px;
+}
+
 .code-block {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
@@ -847,6 +861,10 @@ ul {
 
   .hero-photo-frame {
     max-width: 280px;
+  }
+
+  .hero-code-float {
+    display: none;
   }
 
   .section {
