@@ -222,9 +222,15 @@ ul {
    ============================== */
 .comment {
   font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.18em;
   color: #1e5c3a;
+}
+
+/* Section intro comment (sections have no titles anymore) */
+.section > .container > .comment {
+  display: block;
+  margin-bottom: 48px;
 }
 
 .green {
@@ -400,6 +406,7 @@ ul {
 .code-line {
   display: flex;
   gap: 20px;
+  white-space: pre-wrap;
 }
 
 .code-line .ln {
